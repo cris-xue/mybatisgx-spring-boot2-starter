@@ -29,7 +29,10 @@ public class MybatisgxAutoConfiguration extends MybatisAutoConfiguration {
 
     private static final Logger logger = LoggerFactory.getLogger(MybatisgxAutoConfiguration.class);
 
-    public MybatisgxAutoConfiguration(MybatisgxProperties properties, ObjectProvider<Interceptor[]> interceptorsProvider, ObjectProvider<TypeHandler[]> typeHandlersProvider, ObjectProvider<LanguageDriver[]> languageDriversProvider, ResourceLoader resourceLoader, ObjectProvider<DatabaseIdProvider> databaseIdProvider, ObjectProvider<List<ConfigurationCustomizer>> configurationCustomizersProvider) {
+    public MybatisgxAutoConfiguration(MybatisgxProperties properties, ObjectProvider<Interceptor[]> interceptorsProvider,
+                                      ObjectProvider<TypeHandler[]> typeHandlersProvider, ObjectProvider<LanguageDriver[]> languageDriversProvider,
+                                      ResourceLoader resourceLoader, ObjectProvider<DatabaseIdProvider> databaseIdProvider,
+                                      ObjectProvider<List<ConfigurationCustomizer>> configurationCustomizersProvider) {
         super(properties, interceptorsProvider, typeHandlersProvider, languageDriversProvider, resourceLoader, databaseIdProvider, configurationCustomizersProvider);
     }
 
